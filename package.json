@@ -1,0 +1,37 @@
+{
+  "name": "cxone-client-services-platform",
+  "version": "1.0.0",
+  "description": "cxone-client-services-platform",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run lint && npm run test && rollup -c && cpy package.json dist",
+    "test": "karma start",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.4.0",
+    "cpy": "^7.3.0",
+    "cpy-cli": "^2.0.0",
+    "fetch-mock": "^8.3.2",
+    "jasmine-core": "^3.3.0",
+    "karma": "^4.3.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-cli": "^2.0.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-typescript": "^4.1.1",
+    "karma-typescript-es6-transform": "^4.1.1",
+    "rollup": "^1.29.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.4"
+  }
+}

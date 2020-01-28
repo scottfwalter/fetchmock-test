@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <script type="module">
+            import { FeatureToggles }  from './dist/index.es.js';
+            let ft = new FeatureToggles();
+            ft.allFetchPlusObservables().subscribe(res => console.log(res));
+          </script>
+    </head>
+    <body>
+    </body>
+</html>
